@@ -2,14 +2,11 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary SEO -->
   <title>BijleeAI — Autonomous Solar Plant Monitoring | AI-Powered Alerts</title>
   <meta name="description" content="BijleeAI monitors your solar plants 24/7, flags failures, and sends alerts before they cost you revenue. Free 4-week pilot for C&amp;I operators.">
   <meta name="keywords" content="solar monitoring, solar plant management, AI monitoring, BijleeAI, renewable energy monitoring, solar O&amp;M, plant performance, C&amp;I solar, solar asset management India">
   <link rel="canonical" href="https://bijleeai.com/">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BijleeAI">
   <meta property="og:title" content="BijleeAI — Your Solar Plants, Watched 24/7 by AI">
@@ -21,14 +18,12 @@
   <meta property="og:url" content="https://bijleeai.com/">
   <meta property="og:locale" content="en_IN">
 
-  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BijleeAI — Your Solar Plants, Watched 24/7 by AI">
   <meta name="twitter:description" content="Stop discovering failures at month-end. BijleeAI monitors generation, flags underperformance, and sends instant alerts. Free 4-week pilot for C&amp;I solar operators.">
   <meta name="twitter:image" content="https://pub-629428d185ca4960a0a73c850d32294b.r2.dev/company_99013/images/a82decc9-0d20-438c-96d1-6af8d8fefd98.png">
   <meta name="twitter:image:alt" content="BijleeAI — AI-powered solar plant monitoring">
 
-  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,16 +33,9 @@
         "@id": "https://bijleeai.com/#organization",
         "name": "BijleeAI",
         "url": "https://bijleeai.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://pub-629428d185ca4960a0a73c850d32294b.r2.dev/company_99013/images/a82decc9-0d20-438c-96d1-6af8d8fefd98.png"
-        },
-        "description": "BijleeAI provides autonomous AI-powered monitoring for solar plants, delivering real-time alerts, performance analytics, and automated reports for C&I solar operators.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "bijleeai@polsia.app",
-          "contactType": "sales"
-        }
+        "logo": {"@type":"ImageObject","url":"https://pub-629428d185ca4960a0a73c850d32294b.r2.dev/company_99013/images/a82decc9-0d20-438c-96d1-6af8d8fefd98.png"},
+        "description": "BijleeAI provides autonomous AI-powered monitoring for solar plants.",
+        "contactPoint": {"@type":"ContactPoint","email":"bijleeai@polsia.app","contactType":"sales"}
       },
       {
         "@type": "SoftwareApplication",
@@ -57,22 +45,15 @@
         "operatingSystem": "Web",
         "description": "Autonomous solar plant monitoring platform with AI-powered alerts, generation tracking, and investor-ready reporting.",
         "url": "https://bijleeai.com/",
-        "offers": {
-          "@type": "Offer",
-          "price": "2500",
-          "priceCurrency": "INR",
-          "description": "Free 4-week pilot available. No credit card required.",
-          "eligibleRegion": "IN"
-        },
-        "publisher": { "@id": "https://bijleeai.com/#organization" }
+        "offers": {"@type":"Offer","price":"2500","priceCurrency":"INR","description":"Free 4-week pilot available.","eligibleRegion":"IN"},
+        "publisher": {"@id":"https://bijleeai.com/#organization"}
       },
       {
         "@type": "WebPage",
         "@id": "https://bijleeai.com/#webpage",
         "url": "https://bijleeai.com/",
         "name": "BijleeAI — Autonomous Solar Plant Monitoring | AI-Powered Alerts",
-        "description": "BijleeAI monitors your solar plants 24/7, flags failures, and sends alerts before they cost you revenue. Free 4-week pilot for C&I operators.",
-        "isPartOf": { "@id": "https://bijleeai.com/#organization" }
+        "isPartOf": {"@id":"https://bijleeai.com/#organization"}
       }
     ]
   }
@@ -83,789 +64,161 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #0a0a1a;
-      --bg-card: #111830;
-      --bg-card-hover: #16213e;
-      --accent: #3b82f6;
-      --accent-dim: rgba(59, 130, 246, 0.12);
-      --accent-glow: rgba(59, 130, 246, 0.25);
-      --text: #ffffff;
-      --text-muted: #b0b9d4;
-      --text-dim: #7a8397;
-      --border: rgba(255,255,255,0.08);
-      --border-accent: rgba(59, 130, 246, 0.25);
-      --green: #10b981;
-      --red: #f87171;
-      --font-head: 'Syne', sans-serif;
-      --font-body: 'DM Sans', sans-serif;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--font-body);
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-      padding: 0 48px;
-    }
-
-    h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
-
-    .nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 16px 32px;
-      background: rgba(10, 10, 26, 0.92);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo {
-      font-family: var(--font-head);
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--text);
-      text-decoration: none;
-      display: flex; align-items: center; gap: 10px;
-    }
-    .nav-logo-icon {
-      width: 32px; height: 32px;
-      background: var(--accent);
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 18px;
-    }
-    .nav-right {
-      display: flex; align-items: center; gap: 16px;
-    }
-    .nav-login {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .nav-login:hover { color: var(--text); }
-    .nav-cta {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 20px;
-      background: var(--accent);
-      color: #0c0c0e;
-      font-weight: 600; font-size: 14px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: opacity 0.2s, transform 0.2s;
-      cursor: pointer;
-      border: none;
-    }
-    .nav-cta:hover { opacity: 0.9; transform: translateY(-1px); }
-
-    @media (max-width: 640px) {
-      .nav { padding: 12px 16px; }
-      .nav-cta span { display: none; }
-    }
-
-    .hero {
-      padding: 120px 0 80px 0;
-      max-width: 1100px;
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-rays {
-      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-      width: 800px; height: 700px;
-      pointer-events: none;
-      opacity: 0.07;
-    }
-
-    .hero-3col {
-      display: grid;
-      grid-template-columns: 220px 1fr 220px;
-      gap: 40px;
-      align-items: start;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-logo-col {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: 8px;
-    }
-    .hero-logo-icon {
-      width: 56px; height: 56px;
-      background: var(--accent);
-      border-radius: 14px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 28px;
-      margin-bottom: 14px;
-      box-shadow: 0 0 32px var(--accent-glow);
-    }
-    .hero-brand-name {
-      font-family: var(--font-head);
-      font-size: 1.6rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--text);
-    }
-    .hero-brand-sub {
-      font-size: 12px;
-      color: var(--text-dim);
-      letter-spacing: 0.5px;
-      margin-top: 4px;
-    }
-
-    .hero-main-col {}
-
-    .hero-eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 13px; font-weight: 500;
-      color: var(--accent);
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      padding: 6px 14px;
-      background: var(--accent-dim);
-      border: 1px solid var(--border-accent);
-      border-radius: 100px;
-    }
-    .hero-eyebrow-dot {
-      width: 6px; height: 6px;
-      background: var(--accent);
-      border-radius: 50%;
-      animation: pulse 2.5s ease infinite;
-    }
-    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 4.5vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -0.03em;
-      margin-bottom: 20px;
-    }
-    .hero h1 .accent-line { color: var(--accent); }
-
-    .hero-sub {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      line-height: 1.75;
-      margin-bottom: 32px;
-    }
-
-    .hero-actions {
-      display: flex; gap: 14px; flex-wrap: wrap;
-    }
-
-    .hero-right-col {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding-top: 12px;
-    }
-    .hero-see-how {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--accent);
-      text-decoration: none;
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 8px 0;
-      border-bottom: 1px solid var(--border-accent);
-      transition: color 0.2s, border-color 0.2s;
-      cursor: pointer;
-    }
-    .hero-see-how:hover { color: #60a5fa; border-color: #60a5fa; }
-    .hero-see-how svg { transition: transform 0.2s; }
-    .hero-see-how:hover svg { transform: translateX(3px); }
-
-    .hero-bullet-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .hero-bullet-list li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
-    .hero-bullet-dot {
-      width: 7px; height: 7px;
-      background: var(--green);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    @media (max-width: 900px) {
-      .hero-3col {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-      .hero-logo-col { flex-direction: row; align-items: center; gap: 16px; }
-      .hero-logo-icon { margin-bottom: 0; }
-      .hero-right-col { padding-top: 0; }
-    }
-
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 13px 26px;
-      background: var(--accent);
-      color: #0c0c0e;
-      font-weight: 700; font-size: 14px;
-      border-radius: 10px;
-      text-decoration: none;
-      border: none; cursor: pointer;
-      font-family: var(--font-body);
-      transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 0 0 0 var(--accent-glow);
-    }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 32px var(--accent-glow);
-    }
-
-    .btn-ghost {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 13px 22px;
-      background: transparent;
-      color: var(--text-muted);
-      font-weight: 500; font-size: 14px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      text-decoration: none;
-      font-family: var(--font-body);
-      cursor: pointer;
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .btn-ghost:hover { border-color: var(--text-muted); color: var(--text); }
-
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      max-width: 1100px;
-      margin: 40px auto;
-    }
-
-    .section {
-      padding: 80px 0;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .section-label {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 2.5px;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-
-    .section h2 {
-      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 16px;
-    }
-
-    .section-sub {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      max-width: 540px;
-      margin-bottom: 48px;
-    }
-
-    .problem-hook {
-      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      font-family: var(--font-head);
-      font-weight: 700;
-      color: var(--red);
-      margin-bottom: 32px;
-      line-height: 1.3;
-    }
-
-    .problem-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-bottom: 40px;
-      padding-left: 24px;
-    }
-
-    .problem-item {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px 24px;
-      position: relative;
-      overflow: hidden;
-      transition: border-color 0.2s;
-    }
-    .problem-item::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 0; bottom: 0;
-      width: 3px;
-      background: rgba(248, 113, 113, 0.5);
-      border-radius: 3px 0 0 3px;
-    }
-    .problem-item:hover { border-color: rgba(248, 113, 113, 0.25); }
-
-    .problem-number {
-      font-family: var(--font-head);
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: rgba(248, 113, 113, 0.4);
-      min-width: 36px;
-      line-height: 1;
-    }
-
-    .problem-text {
-      font-size: 1rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    .problem-cta {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 14px; font-weight: 600;
-      color: var(--accent);
-      text-decoration: none;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border-accent);
-      transition: color 0.2s, border-color 0.2s;
-      cursor: pointer;
-    }
-    .problem-cta:hover { color: #60a5fa; border-color: #60a5fa; }
-    .problem-cta svg { transition: transform 0.2s; }
-    .problem-cta:hover svg { transform: translateX(3px); }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding-left: 24px;
-    }
-
-    .feature-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px 24px;
-      transition: border-color 0.25s, transform 0.25s;
-    }
-    .feature-card:hover {
-      border-color: var(--border-accent);
-      transform: translateY(-2px);
-    }
-
-    .feature-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .feature-icon {
-      font-size: 20px;
-      flex-shrink: 0;
-      width: 36px; height: 36px;
-      background: var(--accent-dim);
-      border: 1px solid var(--border-accent);
-      border-radius: 9px;
-      display: flex; align-items: center; justify-content: center;
-    }
-
-    .feature-card h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      line-height: 1.3;
-    }
-
-    .feature-card p {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.65;
-    }
-
-    .closing-section {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 56px 48px;
-      text-align: center;
-    }
-
-    .closing-hook {
-      font-family: var(--font-head);
-      font-size: clamp(1.4rem, 3vw, 2.2rem);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 12px;
-    }
-
-    .closing-sub {
-      font-size: 1rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      max-width: 520px;
-      margin: 0 auto 36px auto;
-    }
-
-    .closing-actions {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .pricing-link-text {
-      font-size: 13px;
-      color: var(--text-muted);
-      cursor: pointer;
-      text-decoration: underline;
-      text-decoration-color: var(--border-accent);
-      text-underline-offset: 3px;
-      background: none;
-      border: none;
-      font-family: var(--font-body);
-      transition: color 0.2s;
-    }
-    .pricing-link-text:hover { color: var(--accent); text-decoration-color: var(--accent); }
-
-    @media (max-width: 640px) {
-      .closing-section { padding: 36px 24px; }
-    }
-
-    footer {
-      padding: 48px 0;
-      border-top: 1px solid var(--border);
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .footer-inner {
-      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
-    }
-    footer p { font-size: 13px; color: var(--text-dim); }
-    footer .footer-brand { font-family: var(--font-head); font-size: 14px; font-weight: 700; color: var(--text-muted); }
-    footer .footer-tagline { font-size: 12px; color: var(--text-dim); }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 300;
-      width: 56px;
-      height: 56px;
-      background: #25d366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-      transition: transform 0.2s, box-shadow 0.2s;
-      text-decoration: none;
-    }
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
-    }
-    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .fade-up {
-      opacity: 0;
-      animation: fadeUp 0.6s ease forwards;
-    }
-    .fade-up:nth-child(1) { animation-delay: 0.05s; }
-    .fade-up:nth-child(2) { animation-delay: 0.15s; }
-    .fade-up:nth-child(3) { animation-delay: 0.25s; }
-    .fade-up:nth-child(4) { animation-delay: 0.35s; }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(5, 5, 20, 0.85);
-      backdrop-filter: blur(8px);
-      z-index: 500;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .modal-overlay.open {
-      display: flex;
-    }
-
-    .modal {
-      background: var(--bg-card);
-      border: 1px solid var(--border-accent);
-      border-radius: 20px;
-      padding: 48px 40px;
-      max-width: 680px;
-      width: 100%;
-      max-height: 90vh;
-      overflow-y: auto;
-      position: relative;
-      animation: modalIn 0.25s ease;
-    }
-    @keyframes modalIn {
-      from { opacity: 0; transform: translateY(20px) scale(0.97); }
-      to { opacity: 1; transform: translateY(0) scale(1); }
-    }
-
-    .modal-close {
-      position: absolute;
-      top: 16px; right: 16px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--text-muted);
-      width: 36px; height: 36px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 18px;
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s;
-      line-height: 1;
-    }
-    .modal-close:hover { background: var(--bg-card-hover); color: var(--text); }
-
-    .modal h2 {
-      font-size: 1.7rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-    }
-    .modal-sub {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      margin-bottom: 32px;
-      line-height: 1.6;
-    }
-
-    .pricing-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 24px;
-    }
-    .pricing-table th {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: var(--text-dim);
-      font-weight: 600;
-      padding: 0 16px 12px 16px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
-    .pricing-table td {
-      padding: 16px;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      border-bottom: 1px solid var(--border);
-      vertical-align: middle;
-    }
-    .pricing-table tr:last-child td { border-bottom: none; }
-    .pricing-table td:first-child {
-      font-family: var(--font-head);
-      font-weight: 700;
-      color: var(--text);
-      font-size: 1rem;
-    }
-    .pricing-table tr:hover td { background: rgba(59,130,246,0.04); }
-
-    .pricing-badge-pill {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 100px;
-      border: 1px solid var(--border-accent);
-      color: var(--accent);
-      background: var(--accent-dim);
-      margin-bottom: 4px;
-    }
-
-    .pilot-note {
-      font-size: 12px;
-      color: var(--text-dim);
-      text-align: center;
-      margin-top: 8px;
-    }
-
-    .form-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0 12px;
-    }
-    .form-table td {
-      padding: 0;
-      vertical-align: middle;
-    }
-    .form-table td:first-child {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-muted);
-      white-space: nowrap;
-      padding-right: 16px;
-      width: 140px;
-    }
-
-    .form-input {
-      width: 100%;
-      padding: 11px 15px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      color: var(--text);
-      font-family: var(--font-body);
-      font-size: 14px;
-      outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      -webkit-appearance: none;
-      appearance: none;
-    }
-    .form-input:focus {
-      border-color: var(--border-accent);
-      box-shadow: 0 0 0 3px var(--accent-dim);
-    }
-    .form-input::placeholder { color: var(--text-dim); }
-
-    .form-submit {
-      width: 100%;
-      margin-top: 8px;
-      padding: 14px;
-      background: var(--accent);
-      color: #0c0c0e;
-      font-family: var(--font-body);
-      font-weight: 700; font-size: 15px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: opacity 0.2s, transform 0.2s;
-    }
-    .form-submit:hover { opacity: 0.9; transform: translateY(-1px); }
-    .form-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
-
-    .form-msg {
-      margin-top: 14px;
-      padding: 12px 16px;
-      border-radius: 10px;
-      font-size: 14px;
-      display: none;
-    }
-    .form-msg.success { display: block; background: rgba(74,222,128,0.1); color: var(--green); border: 1px solid rgba(74,222,128,0.2); }
-    .form-msg.error { display: block; background: rgba(248,113,113,0.1); color: var(--red); border: 1px solid rgba(248,113,113,0.2); }
-
-    @media (max-width: 768px) {
-      body { padding: 0 32px; }
-      .modal { padding: 36px 24px; }
-      .form-table td:first-child { width: 110px; font-size: 12px; }
-      .pricing-table th, .pricing-table td { padding: 12px 8px; font-size: 0.82rem; }
-    }
-    @media (max-width: 640px) {
-      body { padding: 0 20px; }
-      .section { padding: 60px 0; }
-      .hero { padding: 100px 0 60px 0; }
-      footer { padding: 32px 0; }
-      hr.divider { margin: 24px auto; }
-      .features-grid { padding-left: 0; }
-      .form-table { border-spacing: 0 10px; }
-      .form-table td:first-child { display: block; width: auto; padding-bottom: 6px; }
-      .form-table tr { display: flex; flex-direction: column; }
-      .form-table td:last-child { display: block; }
-    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#0a0a1a;--bg-card:#111830;--bg-card-hover:#16213e;--accent:#3b82f6;--accent-dim:rgba(59,130,246,0.12);--accent-glow:rgba(59,130,246,0.25);--text:#fff;--text-muted:#b0b9d4;--text-dim:#7a8397;--border:rgba(255,255,255,0.08);--border-accent:rgba(59,130,246,0.25);--green:#10b981;--red:#f87171;--font-head:'Syne',sans-serif;--font-body:'DM Sans',sans-serif}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;padding:0 48px}
+    h1,h2,h3{font-family:var(--font-head);line-height:1.15}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(10,10,26,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:10px}
+    .nav-logo-icon{width:32px;height:32px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+    .nav-right{display:flex;align-items:center;gap:16px}
+    .nav-login{font-size:14px;font-weight:500;color:var(--text-muted);text-decoration:none;transition:color .2s}
+    .nav-login:hover{color:var(--text)}
+    .nav-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--accent);color:#0c0c0e;font-weight:600;font-size:14px;border-radius:8px;text-decoration:none;transition:opacity .2s,transform .2s;cursor:pointer;border:none}
+    .nav-cta:hover{opacity:.9;transform:translateY(-1px)}
+    @media(max-width:640px){.nav{padding:12px 16px}.nav-cta span{display:none}}
+    .hero{padding:120px 0 80px 0;max-width:1100px;margin:0 auto;position:relative;overflow:hidden}
+    .hero-rays{position:absolute;top:0;left:50%;transform:translateX(-50%);width:800px;height:700px;pointer-events:none;opacity:.07}
+    .hero-3col{display:grid;grid-template-columns:220px 1fr 220px;gap:40px;align-items:start;position:relative;z-index:1}
+    .hero-logo-col{display:flex;flex-direction:column;align-items:flex-start;padding-top:8px}
+    .hero-logo-icon{width:56px;height:56px;background:var(--accent);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:14px;box-shadow:0 0 32px var(--accent-glow)}
+    .hero-brand-name{font-family:var(--font-head);font-size:1.6rem;font-weight:800;letter-spacing:-.02em;color:var(--text)}
+    .hero-brand-sub{font-size:12px;color:var(--text-dim);letter-spacing:.5px;margin-top:4px}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--accent);letter-spacing:.5px;text-transform:uppercase;margin-bottom:20px;padding:6px 14px;background:var(--accent-dim);border:1px solid var(--border-accent);border-radius:100px}
+    .hero-eyebrow-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2.5s ease infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+    .hero h1{font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;margin-bottom:20px}
+    .hero h1 .accent-line{color:var(--accent)}
+    .hero-sub{font-size:1.05rem;color:var(--text-muted);line-height:1.75;margin-bottom:32px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-right-col{display:flex;flex-direction:column;gap:20px;padding-top:12px}
+    .hero-see-how{font-size:14px;font-weight:600;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:6px;padding:8px 0;border-bottom:1px solid var(--border-accent);transition:color .2s,border-color .2s;cursor:pointer}
+    .hero-see-how:hover{color:#60a5fa;border-color:#60a5fa}
+    .hero-see-how svg{transition:transform .2s}
+    .hero-see-how:hover svg{transform:translateX(3px)}
+    .hero-bullet-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+    .hero-bullet-list li{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text-muted);line-height:1.4}
+    .hero-bullet-dot{width:7px;height:7px;background:var(--green);border-radius:50%;flex-shrink:0}
+    @media(max-width:900px){.hero-3col{grid-template-columns:1fr;gap:32px}.hero-logo-col{flex-direction:row;align-items:center;gap:16px}.hero-logo-icon{margin-bottom:0}.hero-right-col{padding-top:0}}
+    .btn-primary{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:var(--accent);color:#0c0c0e;font-weight:700;font-size:14px;border-radius:10px;text-decoration:none;border:none;cursor:pointer;font-family:var(--font-body);transition:transform .2s,box-shadow .2s;box-shadow:0 0 0 0 var(--accent-glow)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px var(--accent-glow)}
+    .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;background:transparent;color:var(--text-muted);font-weight:500;font-size:14px;border:1px solid var(--border);border-radius:10px;text-decoration:none;font-family:var(--font-body);cursor:pointer;transition:border-color .2s,color .2s}
+    .btn-ghost:hover{border-color:var(--text-muted);color:var(--text)}
+    .divider{border:none;border-top:1px solid var(--border);max-width:1100px;margin:40px auto}
+    .section{padding:80px 0;max-width:1100px;margin:0 auto}
+    .section-label{font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);font-weight:600;margin-bottom:16px}
+    .section h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;letter-spacing:-.02em;margin-bottom:16px}
+    .section-sub{font-size:1.05rem;color:var(--text-muted);line-height:1.7;max-width:540px;margin-bottom:48px}
+    .problem-hook{font-size:clamp(1.2rem,2.5vw,1.6rem);font-family:var(--font-head);font-weight:700;color:var(--red);margin-bottom:32px;line-height:1.3}
+    .problem-list{list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:40px;padding-left:24px}
+    .problem-item{display:flex;align-items:center;gap:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:20px 24px;position:relative;overflow:hidden;transition:border-color .2s}
+    .problem-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:rgba(248,113,113,0.5);border-radius:3px 0 0 3px}
+    .problem-item:hover{border-color:rgba(248,113,113,0.25)}
+    .problem-number{font-family:var(--font-head);font-size:1.4rem;font-weight:800;color:rgba(248,113,113,0.4);min-width:36px;line-height:1}
+    .problem-text{font-size:1rem;color:var(--text-muted);line-height:1.5}
+    .problem-cta{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--accent);text-decoration:none;padding:10px 0;border-bottom:1px solid var(--border-accent);transition:color .2s,border-color .2s;cursor:pointer}
+    .problem-cta:hover{color:#60a5fa;border-color:#60a5fa}
+    .problem-cta svg{transition:transform .2s}
+    .problem-cta:hover svg{transform:translateX(3px)}
+    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding-left:24px}
+    .feature-card{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:28px 24px;transition:border-color .25s,transform .25s}
+    .feature-card:hover{border-color:var(--border-accent);transform:translateY(-2px)}
+    .feature-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .feature-icon{font-size:20px;flex-shrink:0;width:36px;height:36px;background:var(--accent-dim);border:1px solid var(--border-accent);border-radius:9px;display:flex;align-items:center;justify-content:center}
+    .feature-card h3{font-size:1rem;font-weight:700;letter-spacing:-.01em;line-height:1.3}
+    .feature-card p{font-size:.88rem;color:var(--text-muted);line-height:1.65}
+    .closing-section{background:var(--bg-card);border:1px solid var(--border);border-radius:24px;padding:56px 48px;text-align:center}
+    .closing-hook{font-family:var(--font-head);font-size:clamp(1.4rem,3vw,2.2rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+    .closing-sub{font-size:1rem;color:var(--text-muted);line-height:1.7;max-width:520px;margin:0 auto 36px auto}
+    .closing-actions{display:flex;flex-direction:column;align-items:center;gap:16px}
+    .pricing-link-text{font-size:13px;color:var(--text-muted);cursor:pointer;text-decoration:underline;text-decoration-color:var(--border-accent);text-underline-offset:3px;background:none;border:none;font-family:var(--font-body);transition:color .2s}
+    .pricing-link-text:hover{color:var(--accent);text-decoration-color:var(--accent)}
+    @media(max-width:640px){.closing-section{padding:36px 24px}}
+    footer{padding:48px 0;border-top:1px solid var(--border);max-width:1100px;margin:0 auto}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    footer p{font-size:13px;color:var(--text-dim)}
+    footer .footer-brand{font-family:var(--font-head);font-size:14px;font-weight:700;color:var(--text-muted)}
+    footer .footer-tagline{font-size:12px;color:var(--text-dim)}
+    .whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:300;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform .2s,box-shadow .2s;text-decoration:none}
+    .whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,0.5)}
+    .whatsapp-float svg{width:28px;height:28px;fill:#fff}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    .fade-up{opacity:0;animation:fadeUp .6s ease forwards}
+    .fade-up:nth-child(1){animation-delay:.05s}
+    .fade-up:nth-child(2){animation-delay:.15s}
+    .fade-up:nth-child(3){animation-delay:.25s}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(5,5,20,0.85);backdrop-filter:blur(8px);z-index:500;align-items:center;justify-content:center;padding:24px}
+    .modal-overlay.open{display:flex}
+    .modal{background:var(--bg-card);border:1px solid var(--border-accent);border-radius:20px;padding:48px 40px;max-width:680px;width:100%;max-height:90vh;overflow-y:auto;position:relative;animation:modalIn .25s ease}
+    @keyframes modalIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+    .modal-close{position:absolute;top:16px;right:16px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text-muted);width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;transition:background .2s,color .2s;line-height:1}
+    .modal-close:hover{background:var(--bg-card-hover);color:var(--text)}
+    .modal h2{font-size:1.7rem;font-weight:700;letter-spacing:-.02em;margin-bottom:8px}
+    .modal-sub{font-size:.92rem;color:var(--text-muted);margin-bottom:32px;line-height:1.6}
+    .pricing-table{width:100%;border-collapse:collapse;margin-bottom:24px}
+    .pricing-table th{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);font-weight:600;padding:0 16px 12px 16px;text-align:left;border-bottom:1px solid var(--border)}
+    .pricing-table td{padding:16px;font-size:.9rem;color:var(--text-muted);border-bottom:1px solid var(--border);vertical-align:middle}
+    .pricing-table tr:last-child td{border-bottom:none}
+    .pricing-table td:first-child{font-family:var(--font-head);font-weight:700;color:var(--text);font-size:1rem}
+    .pricing-table tr:hover td{background:rgba(59,130,246,0.04)}
+    .pricing-badge-pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;border:1px solid var(--border-accent);color:var(--accent);background:var(--accent-dim);margin-bottom:4px}
+    .pilot-note{font-size:12px;color:var(--text-dim);text-align:center;margin-top:8px}
+    .form-table{width:100%;border-collapse:separate;border-spacing:0 12px}
+    .form-table td{padding:0;vertical-align:middle}
+    .form-table td:first-child{font-size:13px;font-weight:500;color:var(--text-muted);white-space:nowrap;padding-right:16px;width:140px}
+    .form-input{width:100%;padding:11px 15px;background:var(--bg);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--font-body);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+    .form-input:focus{border-color:var(--border-accent);box-shadow:0 0 0 3px var(--accent-dim)}
+    .form-input::placeholder{color:var(--text-dim)}
+    .form-submit{width:100%;margin-top:8px;padding:14px;background:var(--accent);color:#0c0c0e;font-family:var(--font-body);font-weight:700;font-size:15px;border:none;border-radius:10px;cursor:pointer;transition:opacity .2s,transform .2s}
+    .form-submit:hover{opacity:.9;transform:translateY(-1px)}
+    .form-submit:disabled{opacity:.5;cursor:not-allowed;transform:none}
+    .form-msg{margin-top:14px;padding:12px 16px;border-radius:10px;font-size:14px;display:none}
+    .form-msg.success{display:block;background:rgba(74,222,128,0.1);color:var(--green);border:1px solid rgba(74,222,128,0.2)}
+    .form-msg.error{display:block;background:rgba(248,113,113,0.1);color:var(--red);border:1px solid rgba(248,113,113,0.2)}
+    @media(max-width:768px){body{padding:0 32px}.modal{padding:36px 24px}.form-table td:first-child{width:110px;font-size:12px}.pricing-table th,.pricing-table td{padding:12px 8px;font-size:.82rem}}
+    @media(max-width:640px){body{padding:0 20px}.section{padding:60px 0}.hero{padding:100px 0 60px 0}footer{padding:32px 0}hr.divider{margin:24px auto}.features-grid{padding-left:0}.form-table{border-spacing:0 10px}.form-table td:first-child{display:block;width:auto;padding-bottom:6px}.form-table tr{display:flex;flex-direction:column}.form-table td:last-child{display:block}}
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
-    <a href="https://bijleeai.com/" class="nav-logo">
-      <div class="nav-logo-icon">☀</div>
-      BijleeAI
-    </a>
+    <a href="https://bijleeai.com/" class="nav-logo"><div class="nav-logo-icon">☀</div>BijleeAI</a>
     <div class="nav-right">
       <a href="https://gridmind-17.polsia.app/login" target="_blank" class="nav-login">Client Login</a>
-      <a href="javascript:void(0)" onclick="openContactModal()" class="nav-cta">Request Demo</a>
+      <a href="javascript:void(0)" onclick="openDemoModal()" class="nav-cta">Request Demo</a>
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <svg class="hero-rays" viewBox="0 0 800 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="400" cy="350" r="180" stroke="#3b82f6" stroke-width="0.5" opacity="0.4"></circle>
-      <circle cx="400" cy="350" r="260" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"></circle>
-      <circle cx="400" cy="350" r="340" stroke="#3b82f6" stroke-width="0.5" opacity="0.2"></circle>
-      <line x1="400" y1="60" x2="400" y2="640" stroke="#3b82f6" stroke-width="0.5" opacity="0.15"></line>
-      <line x1="80" y1="350" x2="720" y2="350" stroke="#3b82f6" stroke-width="0.5" opacity="0.15"></line>
-      <line x1="148" y1="98" x2="652" y2="602" stroke="#3b82f6" stroke-width="0.5" opacity="0.1"></line>
-      <line x1="652" y1="98" x2="148" y2="602" stroke="#3b82f6" stroke-width="0.5" opacity="0.1"></line>
+      <circle cx="400" cy="350" r="180" stroke="#3b82f6" stroke-width="0.5" opacity="0.4"/>
+      <circle cx="400" cy="350" r="260" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"/>
+      <circle cx="400" cy="350" r="340" stroke="#3b82f6" stroke-width="0.5" opacity="0.2"/>
+      <line x1="400" y1="60" x2="400" y2="640" stroke="#3b82f6" stroke-width="0.5" opacity="0.15"/>
+      <line x1="80" y1="350" x2="720" y2="350" stroke="#3b82f6" stroke-width="0.5" opacity="0.15"/>
+      <line x1="148" y1="98" x2="652" y2="602" stroke="#3b82f6" stroke-width="0.5" opacity="0.1"/>
+      <line x1="652" y1="98" x2="148" y2="602" stroke="#3b82f6" stroke-width="0.5" opacity="0.1"/>
     </svg>
-
     <div class="hero-3col">
       <div class="hero-logo-col fade-up">
         <div class="hero-logo-icon">☀</div>
         <div class="hero-brand-name">BijleeAI</div>
         <div class="hero-brand-sub">Autonomous Intelligence</div>
       </div>
-
       <div class="hero-main-col fade-up">
-        <div class="hero-eyebrow">
-          <span class="hero-eyebrow-dot"></span>
-          Autonomous Solar Monitoring
-        </div>
-        <h1>
-          Your Solar Plants.<br>
-          <span class="accent-line">Watched 24/7 by AI.</span>
-        </h1>
-        <p class="hero-sub">
-          BijleeAI monitors generation, flags failures, and sends you alerts — so you catch problems before they cost you revenue.
-        </p>
+        <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Autonomous Solar Monitoring</div>
+        <h1>Your Solar Plants.<br><span class="accent-line">Watched 24/7 by AI.</span></h1>
+        <p class="hero-sub">BijleeAI monitors generation, flags failures, and sends you alerts — so you catch problems before they cost you revenue.</p>
         <div class="hero-actions">
-          <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary" style="text-decoration:none;">
-            Start free 4-Week Pilot
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </a>
-          <a href="javascript:void(0)" onclick="openContactModal()" class="btn-ghost" style="text-decoration:none;">Request for Demo</a>
+          <a href="javascript:void(0)" onclick="openPilotModal()" class="btn-primary" style="text-decoration:none;">Start free 4-Week Pilot <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="javascript:void(0)" onclick="openDemoModal()" class="btn-ghost" style="text-decoration:none;">Request for Demo</a>
         </div>
       </div>
-
       <div class="hero-right-col fade-up">
-        <a href="javascript:void(0)" onclick="openContactModal()" class="hero-see-how">
-          See How It Works
-          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </a>
+        <a href="javascript:void(0)" onclick="openDemoModal()" class="hero-see-how">See How It Works <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <ul class="hero-bullet-list">
           <li><span class="hero-bullet-dot"></span>24/7 Autonomous monitoring</li>
           <li><span class="hero-bullet-dot"></span>5% average generation improvement</li>
@@ -877,355 +230,238 @@
 
   <hr class="divider">
 
-  <!-- PROBLEM SECTION -->
   <section class="section reveal visible">
     <div class="section-label">The Problem</div>
     <p class="problem-hook">Is Your Solar Plant Bleeding Revenue Without You Knowing?</p>
     <ul class="problem-list">
-      <li class="problem-item">
-        <span class="problem-number">01</span>
-        <span class="problem-text">Failures only visible at month-end</span>
-      </li>
-      <li class="problem-item">
-        <span class="problem-number">02</span>
-        <span class="problem-text">Underperformance discovered too late</span>
-      </li>
-      <li class="problem-item">
-        <span class="problem-number">03</span>
-        <span class="problem-text">Manual reporting is time-consuming</span>
-      </li>
+      <li class="problem-item"><span class="problem-number">01</span><span class="problem-text">Failures only visible at month-end</span></li>
+      <li class="problem-item"><span class="problem-number">02</span><span class="problem-text">Underperformance discovered too late</span></li>
+      <li class="problem-item"><span class="problem-number">03</span><span class="problem-text">Manual reporting is time-consuming</span></li>
     </ul>
-    <a href="javascript:void(0)" onclick="openContactModal()" class="problem-cta">
-      See How BijleeAI Fixes This
-      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
+    <a href="javascript:void(0)" onclick="openDemoModal()" class="problem-cta">See How BijleeAI Fixes This <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </section>
 
   <hr class="divider">
 
-  <!-- FEATURES SECTION -->
   <section class="section reveal" id="features">
     <div class="section-label">What BijleeAI Does</div>
     <h2>Everything a good operations team does — automatically</h2>
     <p class="section-sub">Four capabilities that replace the manual work of monitoring, alerting, reporting, and client management.</p>
     <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-header">
-          <div class="feature-icon">👁</div>
-          <h3>Autonomous Monitoring</h3>
-        </div>
-        <p>24/7 monitoring. Alerts before you check.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-header">
-          <div class="feature-icon">⚡</div>
-          <h3>Instant Alert Engine</h3>
-        </div>
-        <p>Instant alerts for failures, maintenance, and underperformance.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-header">
-          <div class="feature-icon">📊</div>
-          <h3>Investor-Ready Reports</h3>
-        </div>
-        <p>Auto-generated reports. Share with investors instantly.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-header">
-          <div class="feature-icon">📁</div>
-          <h3>CSV Import + Client Access</h3>
-        </div>
-        <p>Easy import. Multi-tenant. White-label ready.</p>
-      </div>
+      <div class="feature-card"><div class="feature-header"><div class="feature-icon">👁</div><h3>Autonomous Monitoring</h3></div><p>24/7 monitoring. Alerts before you check.</p></div>
+      <div class="feature-card"><div class="feature-header"><div class="feature-icon">⚡</div><h3>Instant Alert Engine</h3></div><p>Instant alerts for failures, maintenance, and underperformance.</p></div>
+      <div class="feature-card"><div class="feature-header"><div class="feature-icon">📊</div><h3>Investor-Ready Reports</h3></div><p>Auto-generated reports. Share with investors instantly.</p></div>
+      <div class="feature-card"><div class="feature-header"><div class="feature-icon">📁</div><h3>CSV Import + Client Access</h3></div><p>Easy import. Multi-tenant. White-label ready.</p></div>
     </div>
   </section>
 
   <hr class="divider">
 
-  <!-- CLOSING SECTION -->
   <section class="section reveal">
     <div class="closing-section">
-      <div class="section-label" style="text-align:center; margin-bottom: 12px;">Free Pilot · No Credit Card</div>
+      <div class="section-label" style="text-align:center;margin-bottom:12px;">Free Pilot · No Credit Card</div>
       <h2 class="closing-hook">Stop Guessing. Start Monitoring.</h2>
-      <p class="closing-sub">
-        Currently offering free 4-week pilots for qualifying operators — no credit card needed.
-      </p>
+      <p class="closing-sub">Currently offering free 4-week pilots for qualifying operators — no credit card needed.</p>
       <div class="closing-actions">
-        <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary" style="padding: 15px 36px; font-size: 15px; text-decoration:none;">
-          Start Free 4-Week Pilot
-          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </a>
-        <button class="pricing-link-text" onclick="openPricingModal()">
-          Pricing after free pilot →
-        </button>
+        <a href="javascript:void(0)" onclick="openPilotModal()" class="btn-primary" style="padding:15px 36px;font-size:15px;text-decoration:none;">Start Free 4-Week Pilot <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <button class="pricing-link-text" onclick="openPricingModal()">Pricing after free pilot →</button>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
-      <div>
-        <div class="footer-brand">☀ BijleeAI</div>
-        <div class="footer-tagline">Autonomous infrastructure intelligence for renewable energy</div>
-      </div>
-      <p>© 2026 BijleeAI (TilkRaj Enterprise)</p>
-    </div>
-  </footer>
+  <footer><div class="footer-inner"><div><div class="footer-brand">☀ BijleeAI</div><div class="footer-tagline">Autonomous infrastructure intelligence for renewable energy</div></div><p>© 2026 BijleeAI (TilkRaj Enterprise)</p></div></footer>
 
-  <!-- WHATSAPP FLOATING BUTTON — Replace 91XXXXXXXXXX with your number -->
-  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-      <path d="M16.004 0C7.164 0 .002 7.158.002 15.995c0 2.82.737 5.573 2.14 7.997L.012 32l8.244-2.1a15.95 15.95 0 007.744 1.978h.004C24.84 31.878 32 24.72 32 15.995 32 7.158 24.844 0 16.004 0zm0 29.312a13.36 13.36 0 01-6.99-1.97l-.502-.297-5.2 1.324 1.388-5.06-.326-.518A13.3 13.3 0 012.57 15.995c0-7.396 6.04-13.43 13.434-13.43 7.396 0 13.43 6.034 13.43 13.43 0 7.394-6.034 13.317-13.43 13.317zm7.358-10.06c-.404-.2-2.39-1.178-2.76-1.312-.37-.138-.64-.2-.91.2-.27.404-1.046 1.312-1.282 1.582-.236.27-.472.304-.876.104-.404-.2-1.706-.628-3.25-2.004-1.202-1.07-2.013-2.392-2.248-2.796-.236-.404-.026-.622.176-.822.182-.18.404-.472.606-.708.2-.236.27-.404.404-.674.138-.27.07-.506-.034-.708-.104-.2-.91-2.194-1.248-3.004-.328-.788-.662-.682-.91-.694-.236-.012-.506-.014-.776-.014s-.708.104-1.08.506c-.37.404-1.414 1.382-1.414 3.37s1.448 3.91 1.65 4.18c.2.27 2.85 4.348 6.904 6.098.964.416 1.716.664 2.302.852.968.306 1.85.262 2.546.16.776-.116 2.39-.978 2.726-1.922.338-.944.338-1.754.236-1.922-.1-.17-.37-.27-.776-.472z"/>
-    </svg>
-  </a>
+  <!-- WHATSAPP — Replace 91XXXXXXXXXX with your number -->
+  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.004 0C7.164 0 .002 7.158.002 15.995c0 2.82.737 5.573 2.14 7.997L.012 32l8.244-2.1a15.95 15.95 0 007.744 1.978h.004C24.84 31.878 32 24.72 32 15.995 32 7.158 24.844 0 16.004 0zm0 29.312a13.36 13.36 0 01-6.99-1.97l-.502-.297-5.2 1.324 1.388-5.06-.326-.518A13.3 13.3 0 012.57 15.995c0-7.396 6.04-13.43 13.434-13.43 7.396 0 13.43 6.034 13.43 13.43 0 7.394-6.034 13.317-13.43 13.317zm7.358-10.06c-.404-.2-2.39-1.178-2.76-1.312-.37-.138-.64-.2-.91.2-.27.404-1.046 1.312-1.282 1.582-.236.27-.472.304-.876.104-.404-.2-1.706-.628-3.25-2.004-1.202-1.07-2.013-2.392-2.248-2.796-.236-.404-.026-.622.176-.822.182-.18.404-.472.606-.708.2-.236.27-.404.404-.674.138-.27.07-.506-.034-.708-.104-.2-.91-2.194-1.248-3.004-.328-.788-.662-.682-.91-.694-.236-.012-.506-.014-.776-.014s-.708.104-1.08.506c-.37.404-1.414 1.382-1.414 3.37s1.448 3.91 1.65 4.18c.2.27 2.85 4.348 6.904 6.098.964.416 1.716.664 2.302.852.968.306 1.85.262 2.546.16.776-.116 2.39-.978 2.726-1.922.338-.944.338-1.754.236-1.922-.1-.17-.37-.27-.776-.472z"/></svg></a>
 
   <!-- PRICING MODAL -->
-  <div class="modal-overlay" id="pricing-modal" onclick="handleOverlayClick(event, 'pricing-modal')">
+  <div class="modal-overlay" id="pricing-modal" onclick="handleOverlayClick(event,'pricing-modal')">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('pricing-modal')" aria-label="Close">×</button>
+      <button class="modal-close" onclick="closeModal('pricing-modal')">×</button>
       <div class="section-label" style="margin-bottom:12px;">Pricing After Free Pilot</div>
       <h2>Scale Up, Pay Less Per kW</h2>
-      <p class="modal-sub">Billed monthly. No hidden fees. Setup fee is one-time. The more capacity you monitor, the lower your per-kW rate.</p>
+      <p class="modal-sub">Billed monthly. No hidden fees. Setup fee is one-time.</p>
       <table class="pricing-table">
-        <thead>
-          <tr>
-            <th>Plan</th>
-            <th>Capacity</th>
-            <th>Setup Fee</th>
-            <th>Rate</th>
-            <th>Monthly</th>
-            <th></th>
-          </tr>
-        </thead>
+        <thead><tr><th>Plan</th><th>Capacity</th><th>Setup Fee</th><th>Rate</th><th>Monthly</th><th></th></tr></thead>
         <tbody>
-          <tr>
-            <td><span class="pricing-badge-pill">Starter</span></td>
-            <td>Up to 200 kW</td>
-            <td>₹2,500<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/cNieVf1SMcNWcJ9gMI0ZW03" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td>
-            <td>₹5/kW/month</td>
-            <td><small style="color:var(--text-dim)">100 kW = ₹500/mo</small></td>
-            <td><a href="https://buy.stripe.com/6oU00l0OI7tCgZp8gc0ZW00" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:0.82rem;white-space:nowrap;">Subscribe →</a></td>
-          </tr>
-          <tr>
-            <td><span class="pricing-badge-pill">Growth</span></td>
-            <td>200–1,000 kW</td>
-            <td>₹5,000<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/fZu00l1SM15e6kLcws0ZW04" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td>
-            <td>₹4/kW/month</td>
-            <td><small style="color:var(--text-dim)">500 kW = ₹2,000/mo</small></td>
-            <td><a href="https://buy.stripe.com/28E6oJ54Y9BKcJ9bso0ZW01" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:0.82rem;white-space:nowrap;">Subscribe →</a></td>
-          </tr>
-          <tr>
-            <td><span class="pricing-badge-pill">Scale</span></td>
-            <td>1 MW+</td>
-            <td>₹10,000<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/6oU3cx692cNWcJ9bso0ZW05" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td>
-            <td>₹3/kW/month</td>
-            <td><small style="color:var(--text-dim)">1 MW = ₹3,000/mo</small></td>
-            <td><a href="https://buy.stripe.com/eVqaEZ7d615eeRh1RO0ZW02" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:0.82rem;white-space:nowrap;">Subscribe →</a></td>
-          </tr>
+          <tr><td><span class="pricing-badge-pill">Starter</span></td><td>Up to 200 kW</td><td>₹2,500<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/cNieVf1SMcNWcJ9gMI0ZW03" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td><td>₹5/kW/month</td><td><small style="color:var(--text-dim)">100 kW = ₹500/mo</small></td><td><a href="https://buy.stripe.com/6oU00l0OI7tCgZp8gc0ZW00" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:.82rem;white-space:nowrap;">Subscribe →</a></td></tr>
+          <tr><td><span class="pricing-badge-pill">Growth</span></td><td>200–1,000 kW</td><td>₹5,000<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/fZu00l1SM15e6kLcws0ZW04" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td><td>₹4/kW/month</td><td><small style="color:var(--text-dim)">500 kW = ₹2,000/mo</small></td><td><a href="https://buy.stripe.com/28E6oJ54Y9BKcJ9bso0ZW01" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:.82rem;white-space:nowrap;">Subscribe →</a></td></tr>
+          <tr><td><span class="pricing-badge-pill">Scale</span></td><td>1 MW+</td><td>₹10,000<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/6oU3cx692cNWcJ9bso0ZW05" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td><td>₹3/kW/month</td><td><small style="color:var(--text-dim)">1 MW = ₹3,000/mo</small></td><td><a href="https://buy.stripe.com/eVqaEZ7d615eeRh1RO0ZW02" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:.82rem;white-space:nowrap;">Subscribe →</a></td></tr>
         </tbody>
       </table>
-      <p class="pilot-note">✓ Start with a free 4-week pilot — no credit card needed. Subscribe after your pilot ends.</p>
-      <a href="javascript:void(0)" onclick="closeModal('pricing-modal'); setTimeout(function(){ openContactModal(); }, 300);" class="btn-primary" style="width:100%; margin-top:24px; justify-content:center; text-decoration:none;">
-        Start Free 4-Week Pilot →
-      </a>
+      <p class="pilot-note">✓ Start with a free 4-week pilot — no credit card needed.</p>
+      <a href="javascript:void(0)" onclick="closeModal('pricing-modal');setTimeout(function(){openPilotModal();},300);" class="btn-primary" style="width:100%;margin-top:24px;justify-content:center;text-decoration:none;">Start Free 4-Week Pilot →</a>
     </div>
   </div>
 
-  <!-- CONTACT FORM MODAL -->
-  <div class="modal-overlay" id="contact-modal" onclick="handleOverlayClick(event, 'contact-modal')">
+  <!-- DEMO REQUEST MODAL -->
+  <div class="modal-overlay" id="demo-modal" onclick="handleOverlayClick(event,'demo-modal')">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal('contact-modal')" aria-label="Close">×</button>
-      <div class="section-label" style="margin-bottom:12px;">Talk to Us</div>
-      <h2>Request a Free Pilot</h2>
-      <p class="modal-sub">We'll get back to you within one business day. Free 4-week pilot, no commitment.</p>
-      <form id="contact-form-el" novalidate="">
-        <table class="form-table">
-          <tbody>
-            <tr>
-              <td>Full Name <span style="color:var(--red)">*</span></td>
-              <td><input class="form-input" type="text" id="c-name" name="name" placeholder="Ravi Kumar" required="" autocomplete="name"></td>
-            </tr>
-            <tr>
-              <td>Email <span style="color:var(--red)">*</span></td>
-              <td><input class="form-input" type="email" id="c-email" name="email" placeholder="ravi@sunpower.in" required="" autocomplete="email"></td>
-            </tr>
-            <tr>
-              <td>Company <span style="color:var(--red)">*</span></td>
-              <td><input class="form-input" type="text" id="c-company" name="company" placeholder="SunPower Solutions" required=""></td>
-            </tr>
-            <tr>
-              <td>Phone</td>
-              <td><input class="form-input" type="tel" id="c-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel"></td>
-            </tr>
-            <tr>
-              <td>No. of Plants</td>
-              <td><input class="form-input" type="number" id="c-plants" name="num_plants" placeholder="e.g. 5" min="1"></td>
-            </tr>
-            <tr>
-              <td>Plant Capacity</td>
-              <td><input class="form-input" type="text" id="c-capacity" name="capacity" placeholder="e.g. 250 kW or 2.5 MW"></td>
-            </tr>
-          </tbody>
-        </table>
-        <button type="submit" class="form-submit" id="contact-submit-btn" style="margin-top:16px;">
-          Submit Request →
-        </button>
-        <div class="form-msg" id="contact-form-msg"></div>
+      <button class="modal-close" onclick="closeModal('demo-modal')">×</button>
+      <div class="section-label" style="margin-bottom:12px;">See It In Action</div>
+      <h2>Request a Demo</h2>
+      <p class="modal-sub">We'll set up a personalized demo of BijleeAI for your portfolio and send you login credentials within one business day.</p>
+      <form id="demo-form-el" novalidate="">
+        <table class="form-table"><tbody>
+          <tr><td>Full Name <span style="color:var(--red)">*</span></td><td><input class="form-input" type="text" id="d-name" placeholder="Ravi Kumar" required autocomplete="name"></td></tr>
+          <tr><td>Email <span style="color:var(--red)">*</span></td><td><input class="form-input" type="email" id="d-email" placeholder="ravi@sunpower.in" required autocomplete="email"></td></tr>
+          <tr><td>Company <span style="color:var(--red)">*</span></td><td><input class="form-input" type="text" id="d-company" placeholder="SunPower Solutions" required></td></tr>
+          <tr><td>Phone</td><td><input class="form-input" type="tel" id="d-phone" placeholder="+91 98765 43210" autocomplete="tel"></td></tr>
+        </tbody></table>
+        <button type="submit" class="form-submit" id="demo-submit-btn" style="margin-top:16px;">Request Demo →</button>
+        <div class="form-msg" id="demo-form-msg"></div>
       </form>
     </div>
   </div>
 
-  <!-- SCRIPTS -->
+  <!-- PILOT REQUEST MODAL -->
+  <div class="modal-overlay" id="pilot-modal" onclick="handleOverlayClick(event,'pilot-modal')">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('pilot-modal')">×</button>
+      <div class="section-label" style="margin-bottom:12px;">Free 4-Week Pilot</div>
+      <h2>Request a Free Pilot</h2>
+      <p class="modal-sub">We'll get back to you within one business day. Free 4-week pilot, no commitment.</p>
+      <form id="pilot-form-el" novalidate="">
+        <table class="form-table"><tbody>
+          <tr><td>Full Name <span style="color:var(--red)">*</span></td><td><input class="form-input" type="text" id="p-name" placeholder="Ravi Kumar" required autocomplete="name"></td></tr>
+          <tr><td>Email <span style="color:var(--red)">*</span></td><td><input class="form-input" type="email" id="p-email" placeholder="ravi@sunpower.in" required autocomplete="email"></td></tr>
+          <tr><td>Company <span style="color:var(--red)">*</span></td><td><input class="form-input" type="text" id="p-company" placeholder="SunPower Solutions" required></td></tr>
+          <tr><td>Phone</td><td><input class="form-input" type="tel" id="p-phone" placeholder="+91 98765 43210" autocomplete="tel"></td></tr>
+          <tr><td>No. of Plants</td><td><input class="form-input" type="number" id="p-plants" placeholder="e.g. 5" min="1"></td></tr>
+          <tr><td>Plant Capacity</td><td><input class="form-input" type="text" id="p-capacity" placeholder="e.g. 250 kW or 2.5 MW"></td></tr>
+        </tbody></table>
+        <button type="submit" class="form-submit" id="pilot-submit-btn" style="margin-top:16px;">Submit Pilot Request →</button>
+        <div class="form-msg" id="pilot-form-msg"></div>
+      </form>
+    </div>
+  </div>
+
   <script>
     // Scroll reveal
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+    var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting)entry.target.classList.add('visible');});},{threshold:0.08});
+    document.querySelectorAll('.reveal').forEach(function(el){observer.observe(el);});
 
     // Modal helpers
-    function openModal(id) {
-      document.getElementById(id).classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeModal(id) {
-      document.getElementById(id).classList.remove('open');
-      document.body.style.overflow = '';
-    }
-    function handleOverlayClick(e, id) {
-      if (e.target === document.getElementById(id)) closeModal(id);
-    }
-    function openPricingModal() { openModal('pricing-modal'); }
-    function openContactModal() { openModal('contact-modal'); }
+    function openModal(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden';}
+    function closeModal(id){document.getElementById(id).classList.remove('open');document.body.style.overflow='';}
+    function handleOverlayClick(e,id){if(e.target===document.getElementById(id))closeModal(id);}
+    function openPricingModal(){openModal('pricing-modal');}
+    function openDemoModal(){openModal('demo-modal');}
+    function openPilotModal(){openModal('pilot-modal');}
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal('pricing-modal');closeModal('demo-modal');closeModal('pilot-modal');}});
 
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        closeModal('pricing-modal');
-        closeModal('contact-modal');
-      }
-    });
+    // Shared form handler
+    function setupForm(formId,btnId,msgId,requestType,prefix){
+      var form=document.getElementById(formId);
+      var btn=document.getElementById(btnId);
+      var msg=document.getElementById(msgId);
+      var originalLabel=requestType==='demo'?'Request Demo →':'Submit Pilot Request →';
+      var modalId=requestType==='demo'?'demo-modal':'pilot-modal';
+      var successMsg=requestType==='demo'
+        ?"Demo request submitted! We'll send you login credentials within one business day."
+        :"Pilot request submitted! We'll get back to you within one business day.";
 
-    // Contact form submit
-    var contactForm = document.getElementById('contact-form-el');
-    var contactSubmitBtn = document.getElementById('contact-submit-btn');
-    var contactMsg = document.getElementById('contact-form-msg');
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        msg.className='form-msg';
+        msg.textContent='';
 
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      contactMsg.className = 'form-msg';
-      contactMsg.textContent = '';
+        var storedUtm={};
+        try{storedUtm=JSON.parse(localStorage.getItem('bijlee_utm')||'{}');}catch(err){}
 
-      var storedUtm = {};
-      try { storedUtm = JSON.parse(localStorage.getItem('bijlee_utm') || '{}'); } catch(err) {}
+        var data={
+          name:document.getElementById(prefix+'-name').value.trim(),
+          email:document.getElementById(prefix+'-email').value.trim(),
+          company:document.getElementById(prefix+'-company').value.trim(),
+          phone:document.getElementById(prefix+'-phone').value.trim(),
+          request_type:requestType,
+          utm_source:storedUtm.utm_source||null,
+          utm_medium:storedUtm.utm_medium||null,
+          utm_campaign:storedUtm.utm_campaign||null
+        };
 
-      var data = {
-        name: document.getElementById('c-name').value.trim(),
-        email: document.getElementById('c-email').value.trim(),
-        company: document.getElementById('c-company').value.trim(),
-        phone: document.getElementById('c-phone').value.trim(),
-        num_plants: document.getElementById('c-plants').value ? parseInt(document.getElementById('c-plants').value) : null,
-        capacity: document.getElementById('c-capacity').value.trim(),
-        utm_source: storedUtm.utm_source || null,
-        utm_medium: storedUtm.utm_medium || null,
-        utm_campaign: storedUtm.utm_campaign || null
-      };
-
-      if (!data.name || !data.company || !data.email) {
-        contactMsg.className = 'form-msg error';
-        contactMsg.textContent = 'Please fill in your name, company, and email.';
-        return;
-      }
-
-      var emailRe = /^[^\n@]+@[^\n@]+\.[^\n@]+$/;
-      if (!emailRe.test(data.email)) {
-        contactMsg.className = 'form-msg error';
-        contactMsg.textContent = 'Please enter a valid email address.';
-        return;
-      }
-
-      contactSubmitBtn.disabled = true;
-      contactSubmitBtn.textContent = 'Submitting…';
-
-      fetch('https://gridmind-17.polsia.app/api/demo-requests', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
-      .then(function(res) {
-        if (res.ok) {
-          contactMsg.className = 'form-msg success';
-          contactMsg.textContent = "Request submitted! We'll get back to you within one business day.";
-          contactForm.reset();
-          setTimeout(function() { closeModal('contact-modal'); }, 2500);
-        } else {
-          return res.json().catch(function() { return {}; }).then(function(json) {
-            contactMsg.className = 'form-msg error';
-            contactMsg.textContent = json.error || 'Something went wrong. Please try again.';
-          });
+        if(requestType==='pilot'){
+          var plantsEl=document.getElementById('p-plants');
+          var capacityEl=document.getElementById('p-capacity');
+          data.num_plants=plantsEl.value?parseInt(plantsEl.value):null;
+          data.capacity=capacityEl.value.trim();
         }
-      })
-      .catch(function() {
-        contactMsg.className = 'form-msg error';
-        contactMsg.textContent = 'Network error. Please check your connection and try again.';
-      })
-      .finally(function() {
-        contactSubmitBtn.disabled = false;
-        contactSubmitBtn.textContent = 'Submit Request →';
+
+        if(!data.name||!data.company||!data.email){
+          msg.className='form-msg error';
+          msg.textContent='Please fill in your name, company, and email.';
+          return;
+        }
+        var emailRe=/^[^\n@]+@[^\n@]+\.[^\n@]+$/;
+        if(!emailRe.test(data.email)){
+          msg.className='form-msg error';
+          msg.textContent='Please enter a valid email address.';
+          return;
+        }
+
+        btn.disabled=true;
+        btn.textContent='Submitting…';
+
+        fetch('https://gridmind-17.polsia.app/api/demo-requests',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(data)
+        })
+        .then(function(res){
+          if(res.ok){
+            msg.className='form-msg success';
+            msg.textContent=successMsg;
+            form.reset();
+            setTimeout(function(){closeModal(modalId);},2500);
+          }else{
+            return res.json().catch(function(){return{};}).then(function(json){
+              msg.className='form-msg error';
+              msg.textContent=json.error||'Something went wrong. Please try again.';
+            });
+          }
+        })
+        .catch(function(){
+          msg.className='form-msg error';
+          msg.textContent='Network error. Please check your connection and try again.';
+        })
+        .finally(function(){
+          btn.disabled=false;
+          btn.textContent=originalLabel;
+        });
       });
-    });
+    }
+
+    // Initialize both forms
+    setupForm('demo-form-el','demo-submit-btn','demo-form-msg','demo','d');
+    setupForm('pilot-form-el','pilot-submit-btn','pilot-form-msg','pilot','p');
   </script>
 
   <!-- UTM capture + tracking -->
   <script>
-  (function() {
-    var params = new URLSearchParams(window.location.search);
-    var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
-    var utm = {};
-    utmKeys.forEach(function(k) { if (params.get(k)) utm[k] = params.get(k); });
-    if (Object.keys(utm).length) {
-      localStorage.setItem('bijlee_utm', JSON.stringify(utm));
-    } else {
-      try { utm = JSON.parse(localStorage.getItem('bijlee_utm') || '{}'); } catch(err) {}
-    }
-    if (navigator.sendBeacon) {
-      var blob = new Blob([JSON.stringify({
-        page: window.location.pathname,
-        referrer: document.referrer,
-        utm: utm
-      })], { type: 'application/json' });
-      navigator.sendBeacon('https://gridmind-17.polsia.app/api/track', blob);
-    } else {
-      fetch('https://gridmind-17.polsia.app/api/track', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ page: window.location.pathname, referrer: document.referrer, utm: utm }),
-        keepalive: true
-      }).catch(function(){});
+  (function(){
+    var params=new URLSearchParams(window.location.search);
+    var utmKeys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+    var utm={};
+    utmKeys.forEach(function(k){if(params.get(k))utm[k]=params.get(k);});
+    if(Object.keys(utm).length){localStorage.setItem('bijlee_utm',JSON.stringify(utm));}
+    else{try{utm=JSON.parse(localStorage.getItem('bijlee_utm')||'{}');}catch(err){}}
+    if(navigator.sendBeacon){
+      var blob=new Blob([JSON.stringify({page:window.location.pathname,referrer:document.referrer,utm:utm})],{type:'application/json'});
+      navigator.sendBeacon('https://gridmind-17.polsia.app/api/track',blob);
+    }else{
+      fetch('https://gridmind-17.polsia.app/api/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({page:window.location.pathname,referrer:document.referrer,utm:utm}),keepalive:true}).catch(function(){});
     }
   })();
   </script>
 
   <!-- Polsia Analytics -->
   <script>
-  (function() {
-    var slug = 'gridmind-17';
-    if (!slug) return;
-    var vid = localStorage.getItem('polsia_vid');
-    if (!vid) {
-      vid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-        var r = Math.random() * 16 | 0;
-        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-      });
-      localStorage.setItem('polsia_vid', vid);
-    }
-    new Image().src = 'https://polsia.com/api/beacon/pixel?s=' + encodeURIComponent(slug) + '&v=' + encodeURIComponent(vid);
+  (function(){
+    var slug='gridmind-17';
+    if(!slug)return;
+    var vid=localStorage.getItem('polsia_vid');
+    if(!vid){vid='xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=Math.random()*16|0;return(c==='x'?r:(r&0x3|0x8)).toString(16);});localStorage.setItem('polsia_vid',vid);}
+    new Image().src='https://polsia.com/api/beacon/pixel?s='+encodeURIComponent(slug)+'&v='+encodeURIComponent(vid);
   })();
   </script>
 
