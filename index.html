@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://gridmind-17.polsia.app/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
   <title>BijleeAI — Autonomous Solar Plant Monitoring | AI-Powered Alerts</title>
   <meta name="description" content="BijleeAI monitors your solar plants 24/7, flags failures, and sends alerts before they cost you revenue. Free 4-week pilot for C&amp;I operators.">
   <meta name="keywords" content="solar monitoring, solar plant management, AI monitoring, BijleeAI, renewable energy monitoring, solar O&amp;M, plant performance, C&amp;I solar, solar asset management India">
-  <link rel="canonical" href="https://gridmind-17.polsia.app/">
+  <link rel="canonical" href="https://bijleeai.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -19,7 +18,7 @@
   <meta property="og:image:width" content="1792">
   <meta property="og:image:height" content="1024">
   <meta property="og:image:alt" content="BijleeAI — AI-powered solar plant monitoring dashboard">
-  <meta property="og:url" content="https://gridmind-17.polsia.app/">
+  <meta property="og:url" content="https://bijleeai.com/">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter / X Card -->
@@ -36,9 +35,9 @@
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://gridmind-17.polsia.app/#organization",
+        "@id": "https://bijleeai.com/#organization",
         "name": "BijleeAI",
-        "url": "https://gridmind-17.polsia.app/",
+        "url": "https://bijleeai.com/",
         "logo": {
           "@type": "ImageObject",
           "url": "https://pub-629428d185ca4960a0a73c850d32294b.r2.dev/company_99013/images/a82decc9-0d20-438c-96d1-6af8d8fefd98.png"
@@ -52,12 +51,12 @@
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://gridmind-17.polsia.app/#product",
+        "@id": "https://bijleeai.com/#product",
         "name": "BijleeAI",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "description": "Autonomous solar plant monitoring platform with AI-powered alerts, generation tracking, and investor-ready reporting.",
-        "url": "https://gridmind-17.polsia.app/",
+        "url": "https://bijleeai.com/",
         "offers": {
           "@type": "Offer",
           "price": "2500",
@@ -65,15 +64,15 @@
           "description": "Free 4-week pilot available. No credit card required.",
           "eligibleRegion": "IN"
         },
-        "publisher": { "@id": "https://gridmind-17.polsia.app/#organization" }
+        "publisher": { "@id": "https://bijleeai.com/#organization" }
       },
       {
         "@type": "WebPage",
-        "@id": "https://gridmind-17.polsia.app/#webpage",
-        "url": "https://gridmind-17.polsia.app/",
+        "@id": "https://bijleeai.com/#webpage",
+        "url": "https://bijleeai.com/",
         "name": "BijleeAI — Autonomous Solar Plant Monitoring | AI-Powered Alerts",
         "description": "BijleeAI monitors your solar plants 24/7, flags failures, and sends alerts before they cost you revenue. Free 4-week pilot for C&I operators.",
-        "isPartOf": { "@id": "https://gridmind-17.polsia.app/#organization" }
+        "isPartOf": { "@id": "https://bijleeai.com/#organization" }
       }
     ]
   }
@@ -81,7 +80,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./BijleeAI — Autonomous Solar Plant Monitoring _ AI-Powered Alerts_files/css2" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -117,7 +116,6 @@
 
     h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; }
 
-    /* ===================== NAV ===================== */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
@@ -141,6 +139,17 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 18px;
     }
+    .nav-right {
+      display: flex; align-items: center; gap: 16px;
+    }
+    .nav-login {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-login:hover { color: var(--text); }
     .nav-cta {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 10px 20px;
@@ -160,7 +169,6 @@
       .nav-cta span { display: none; }
     }
 
-    /* ===================== HERO — 3-COLUMN ===================== */
     .hero {
       padding: 120px 0 80px 0;
       max-width: 1100px;
@@ -169,7 +177,6 @@
       overflow: hidden;
     }
 
-    /* Ambient sun rays */
     .hero-rays {
       position: absolute; top: 0; left: 50%; transform: translateX(-50%);
       width: 800px; height: 700px;
@@ -186,7 +193,6 @@
       z-index: 1;
     }
 
-    /* Col 1 — Logo block */
     .hero-logo-col {
       display: flex;
       flex-direction: column;
@@ -216,7 +222,6 @@
       margin-top: 4px;
     }
 
-    /* Col 2 — Main CTA */
     .hero-main-col {}
 
     .hero-eyebrow {
@@ -259,7 +264,6 @@
       display: flex; gap: 14px; flex-wrap: wrap;
     }
 
-    /* Col 3 — See How It Works + stats */
     .hero-right-col {
       display: flex;
       flex-direction: column;
@@ -275,6 +279,7 @@
       padding: 8px 0;
       border-bottom: 1px solid var(--border-accent);
       transition: color 0.2s, border-color 0.2s;
+      cursor: pointer;
     }
     .hero-see-how:hover { color: #60a5fa; border-color: #60a5fa; }
     .hero-see-how svg { transition: transform 0.2s; }
@@ -311,7 +316,6 @@
       .hero-right-col { padding-top: 0; }
     }
 
-    /* ===================== BUTTONS ===================== */
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 13px 26px;
@@ -345,7 +349,6 @@
     }
     .btn-ghost:hover { border-color: var(--text-muted); color: var(--text); }
 
-    /* ===================== DIVIDERS ===================== */
     .divider {
       border: none;
       border-top: 1px solid var(--border);
@@ -353,7 +356,6 @@
       margin: 40px auto;
     }
 
-    /* ===================== SECTIONS ===================== */
     .section {
       padding: 80px 0;
       max-width: 1100px;
@@ -384,7 +386,6 @@
       margin-bottom: 48px;
     }
 
-    /* ===================== PROBLEM ===================== */
     .problem-hook {
       font-size: clamp(1.2rem, 2.5vw, 1.6rem);
       font-family: var(--font-head);
@@ -448,12 +449,12 @@
       padding: 10px 0;
       border-bottom: 1px solid var(--border-accent);
       transition: color 0.2s, border-color 0.2s;
+      cursor: pointer;
     }
     .problem-cta:hover { color: #60a5fa; border-color: #60a5fa; }
     .problem-cta svg { transition: transform 0.2s; }
     .problem-cta:hover svg { transform: translateX(3px); }
 
-    /* ===================== FEATURES ===================== */
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -503,7 +504,6 @@
       line-height: 1.65;
     }
 
-    /* ===================== PRICING + CONTACT (MERGED) ===================== */
     .closing-section {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -553,7 +553,6 @@
       .closing-section { padding: 36px 24px; }
     }
 
-    /* ===================== FOOTER ===================== */
     footer {
       padding: 48px 0;
       border-top: 1px solid var(--border);
@@ -567,7 +566,28 @@
     footer .footer-brand { font-family: var(--font-head); font-size: 14px; font-weight: 700; color: var(--text-muted); }
     footer .footer-tagline { font-size: 12px; color: var(--text-dim); }
 
-    /* ===================== SCROLL REVEAL ===================== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 300;
+      width: 56px;
+      height: 56px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
+    }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to { opacity: 1; transform: translateY(0); }
@@ -588,7 +608,6 @@
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ===================== MODAL / POPUP ===================== */
     .modal-overlay {
       display: none;
       position: fixed;
@@ -650,7 +669,6 @@
       line-height: 1.6;
     }
 
-    /* Pricing popup table */
     .pricing-table {
       width: 100%;
       border-collapse: collapse;
@@ -701,7 +719,6 @@
       margin-top: 8px;
     }
 
-    /* Contact form in modal */
     .form-table {
       width: 100%;
       border-collapse: separate;
@@ -766,7 +783,6 @@
     .form-msg.success { display: block; background: rgba(74,222,128,0.1); color: var(--green); border: 1px solid rgba(74,222,128,0.2); }
     .form-msg.error { display: block; background: rgba(248,113,113,0.1); color: var(--red); border: 1px solid rgba(248,113,113,0.2); }
 
-    /* ===================== RESPONSIVE ===================== */
     @media (max-width: 768px) {
       body { padding: 0 32px; }
       .modal { padding: 36px 24px; }
@@ -791,16 +807,18 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="https://gridmind-17.polsia.app/" class="nav-logo">
+    <a href="https://bijleeai.com/" class="nav-logo">
       <div class="nav-logo-icon">☀</div>
       BijleeAI
     </a>
-    <a href="https://gridmind-17.polsia.app/demo" class="nav-cta">Request Demo</a>
+    <div class="nav-right">
+      <a href="https://gridmind-17.polsia.app/login" target="_blank" class="nav-login">Client Login</a>
+      <a href="javascript:void(0)" onclick="openContactModal()" class="nav-cta">Request Demo</a>
+    </div>
   </nav>
 
-  <!-- HERO — 3-column -->
+  <!-- HERO -->
   <section class="hero">
-    <!-- Decorative sun rays SVG -->
     <svg class="hero-rays" viewBox="0 0 800 700" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="400" cy="350" r="180" stroke="#3b82f6" stroke-width="0.5" opacity="0.4"></circle>
       <circle cx="400" cy="350" r="260" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"></circle>
@@ -812,15 +830,12 @@
     </svg>
 
     <div class="hero-3col">
-
-      <!-- Col 1: Logo + Brand -->
       <div class="hero-logo-col fade-up">
         <div class="hero-logo-icon">☀</div>
         <div class="hero-brand-name">BijleeAI</div>
         <div class="hero-brand-sub">Autonomous Intelligence</div>
       </div>
 
-      <!-- Col 2: Main message + CTA -->
       <div class="hero-main-col fade-up">
         <div class="hero-eyebrow">
           <span class="hero-eyebrow-dot"></span>
@@ -834,40 +849,29 @@
           BijleeAI monitors generation, flags failures, and sends you alerts — so you catch problems before they cost you revenue.
         </p>
         <div class="hero-actions">
-          <a href="https://gridmind-17.polsia.app/pilot" class="btn-primary" style="text-decoration:none;">
+          <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary" style="text-decoration:none;">
             Start free 4-Week Pilot
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
-          <a href="https://gridmind-17.polsia.app/demo" class="btn-ghost" style="text-decoration:none;">Request for Demo</a>
+          <a href="javascript:void(0)" onclick="openContactModal()" class="btn-ghost" style="text-decoration:none;">Request for Demo</a>
         </div>
       </div>
 
-      <!-- Col 3: See How It Works + bullet stats -->
       <div class="hero-right-col fade-up">
-        <a href="https://gridmind-17.polsia.app/dashboard" class="hero-see-how">
+        <a href="javascript:void(0)" onclick="openContactModal()" class="hero-see-how">
           See How It Works
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
         <ul class="hero-bullet-list">
-          <li>
-            <span class="hero-bullet-dot"></span>
-            24/7 Autonomous monitoring
-          </li>
-          <li>
-            <span class="hero-bullet-dot"></span>
-            5% average generation improvement
-          </li>
-          <li>
-            <span class="hero-bullet-dot"></span>
-            48h average alert response time
-          </li>
+          <li><span class="hero-bullet-dot"></span>24/7 Autonomous monitoring</li>
+          <li><span class="hero-bullet-dot"></span>5% average generation improvement</li>
+          <li><span class="hero-bullet-dot"></span>48h average alert response time</li>
         </ul>
       </div>
-
     </div>
   </section>
 
@@ -876,9 +880,7 @@
   <!-- PROBLEM SECTION -->
   <section class="section reveal visible">
     <div class="section-label">The Problem</div>
-
     <p class="problem-hook">Is Your Solar Plant Bleeding Revenue Without You Knowing?</p>
-
     <ul class="problem-list">
       <li class="problem-item">
         <span class="problem-number">01</span>
@@ -893,8 +895,7 @@
         <span class="problem-text">Manual reporting is time-consuming</span>
       </li>
     </ul>
-
-    <a href="https://gridmind-17.polsia.app/dashboard" class="problem-cta">
+    <a href="javascript:void(0)" onclick="openContactModal()" class="problem-cta">
       See How BijleeAI Fixes This
       <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -909,7 +910,6 @@
     <div class="section-label">What BijleeAI Does</div>
     <h2>Everything a good operations team does — automatically</h2>
     <p class="section-sub">Four capabilities that replace the manual work of monitoring, alerting, reporting, and client management.</p>
-
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-header">
@@ -944,7 +944,7 @@
 
   <hr class="divider">
 
-  <!-- PRICING + TALK TO US — MERGED CLOSING SECTION -->
+  <!-- CLOSING SECTION -->
   <section class="section reveal">
     <div class="closing-section">
       <div class="section-label" style="text-align:center; margin-bottom: 12px;">Free Pilot · No Credit Card</div>
@@ -953,7 +953,7 @@
         Currently offering free 4-week pilots for qualifying operators — no credit card needed.
       </p>
       <div class="closing-actions">
-        <a href="https://gridmind-17.polsia.app/pilot" class="btn-primary" style="padding: 15px 36px; font-size: 15px; text-decoration:none;">
+        <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary" style="padding: 15px 36px; font-size: 15px; text-decoration:none;">
           Start Free 4-Week Pilot
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -977,16 +977,20 @@
     </div>
   </footer>
 
-  <!-- ============================================================ -->
-  <!-- PRICING POPUP MODAL -->
-  <!-- ============================================================ -->
-  <div class="modal-overlay" id="pricing-modal" onclick="handleOverlayClick(event, &#39;pricing-modal&#39;)">
+  <!-- WHATSAPP FLOATING BUTTON — Replace 91XXXXXXXXXX with your number -->
+  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path d="M16.004 0C7.164 0 .002 7.158.002 15.995c0 2.82.737 5.573 2.14 7.997L.012 32l8.244-2.1a15.95 15.95 0 007.744 1.978h.004C24.84 31.878 32 24.72 32 15.995 32 7.158 24.844 0 16.004 0zm0 29.312a13.36 13.36 0 01-6.99-1.97l-.502-.297-5.2 1.324 1.388-5.06-.326-.518A13.3 13.3 0 012.57 15.995c0-7.396 6.04-13.43 13.434-13.43 7.396 0 13.43 6.034 13.43 13.43 0 7.394-6.034 13.317-13.43 13.317zm7.358-10.06c-.404-.2-2.39-1.178-2.76-1.312-.37-.138-.64-.2-.91.2-.27.404-1.046 1.312-1.282 1.582-.236.27-.472.304-.876.104-.404-.2-1.706-.628-3.25-2.004-1.202-1.07-2.013-2.392-2.248-2.796-.236-.404-.026-.622.176-.822.182-.18.404-.472.606-.708.2-.236.27-.404.404-.674.138-.27.07-.506-.034-.708-.104-.2-.91-2.194-1.248-3.004-.328-.788-.662-.682-.91-.694-.236-.012-.506-.014-.776-.014s-.708.104-1.08.506c-.37.404-1.414 1.382-1.414 3.37s1.448 3.91 1.65 4.18c.2.27 2.85 4.348 6.904 6.098.964.416 1.716.664 2.302.852.968.306 1.85.262 2.546.16.776-.116 2.39-.978 2.726-1.922.338-.944.338-1.754.236-1.922-.1-.17-.37-.27-.776-.472z"/>
+    </svg>
+  </a>
+
+  <!-- PRICING MODAL -->
+  <div class="modal-overlay" id="pricing-modal" onclick="handleOverlayClick(event, 'pricing-modal')">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal(&#39;pricing-modal&#39;)" aria-label="Close">×</button>
+      <button class="modal-close" onclick="closeModal('pricing-modal')" aria-label="Close">×</button>
       <div class="section-label" style="margin-bottom:12px;">Pricing After Free Pilot</div>
       <h2>Scale Up, Pay Less Per kW</h2>
       <p class="modal-sub">Billed monthly. No hidden fees. Setup fee is one-time. The more capacity you monitor, the lower your per-kW rate.</p>
-
       <table class="pricing-table">
         <thead>
           <tr>
@@ -1000,9 +1004,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>
-              <span class="pricing-badge-pill">Starter</span>
-            </td>
+            <td><span class="pricing-badge-pill">Starter</span></td>
             <td>Up to 200 kW</td>
             <td>₹2,500<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/cNieVf1SMcNWcJ9gMI0ZW03" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td>
             <td>₹5/kW/month</td>
@@ -1010,9 +1012,7 @@
             <td><a href="https://buy.stripe.com/6oU00l0OI7tCgZp8gc0ZW00" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:0.82rem;white-space:nowrap;">Subscribe →</a></td>
           </tr>
           <tr>
-            <td>
-              <span class="pricing-badge-pill">Growth</span>
-            </td>
+            <td><span class="pricing-badge-pill">Growth</span></td>
             <td>200–1,000 kW</td>
             <td>₹5,000<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/fZu00l1SM15e6kLcws0ZW04" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td>
             <td>₹4/kW/month</td>
@@ -1020,9 +1020,7 @@
             <td><a href="https://buy.stripe.com/28E6oJ54Y9BKcJ9bso0ZW01" target="_blank" class="btn-primary" style="padding:6px 14px;font-size:0.82rem;white-space:nowrap;">Subscribe →</a></td>
           </tr>
           <tr>
-            <td>
-              <span class="pricing-badge-pill">Scale</span>
-            </td>
+            <td><span class="pricing-badge-pill">Scale</span></td>
             <td>1 MW+</td>
             <td>₹10,000<br><small style="color:var(--text-dim)"><a href="https://buy.stripe.com/6oU3cx692cNWcJ9bso0ZW05" target="_blank" style="color:var(--accent);text-decoration:none;">Pay setup →</a></small></td>
             <td>₹3/kW/month</td>
@@ -1031,53 +1029,49 @@
           </tr>
         </tbody>
       </table>
-
       <p class="pilot-note">✓ Start with a free 4-week pilot — no credit card needed. Subscribe after your pilot ends.</p>
-
-      <a href="https://gridmind-17.polsia.app/pilot" class="btn-primary" style="width:100%; margin-top:24px; justify-content:center; text-decoration:none;">
+      <a href="javascript:void(0)" onclick="closeModal('pricing-modal'); setTimeout(function(){ openContactModal(); }, 300);" class="btn-primary" style="width:100%; margin-top:24px; justify-content:center; text-decoration:none;">
         Start Free 4-Week Pilot →
       </a>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- CONTACT FORM POPUP MODAL -->
-  <!-- ============================================================ -->
-  <div class="modal-overlay" id="contact-modal" onclick="handleOverlayClick(event, &#39;contact-modal&#39;)">
+  <!-- CONTACT FORM MODAL -->
+  <div class="modal-overlay" id="contact-modal" onclick="handleOverlayClick(event, 'contact-modal')">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal(&#39;contact-modal&#39;)" aria-label="Close">×</button>
+      <button class="modal-close" onclick="closeModal('contact-modal')" aria-label="Close">×</button>
       <div class="section-label" style="margin-bottom:12px;">Talk to Us</div>
       <h2>Request a Free Pilot</h2>
       <p class="modal-sub">We'll get back to you within one business day. Free 4-week pilot, no commitment.</p>
-
       <form id="contact-form-el" novalidate="">
         <table class="form-table">
-          <tbody><tr>
-            <td>Full Name <span style="color:var(--red)">*</span></td>
-            <td><input class="form-input" type="text" id="c-name" name="name" placeholder="Ravi Kumar" required="" autocomplete="name"></td>
-          </tr>
-          <tr>
-            <td>Email <span style="color:var(--red)">*</span></td>
-            <td><input class="form-input" type="email" id="c-email" name="email" placeholder="ravi@sunpower.in" required="" autocomplete="email"></td>
-          </tr>
-          <tr>
-            <td>Company <span style="color:var(--red)">*</span></td>
-            <td><input class="form-input" type="text" id="c-company" name="company" placeholder="SunPower Solutions" required=""></td>
-          </tr>
-          <tr>
-            <td>Phone</td>
-            <td><input class="form-input" type="tel" id="c-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel"></td>
-          </tr>
-          <tr>
-            <td>No. of Plants</td>
-            <td><input class="form-input" type="number" id="c-plants" name="num_plants" placeholder="e.g. 5" min="1"></td>
-          </tr>
-          <tr>
-            <td>Plant Capacity</td>
-            <td><input class="form-input" type="text" id="c-capacity" name="capacity" placeholder="e.g. 250 kW or 2.5 MW"></td>
-          </tr>
-        </tbody></table>
-
+          <tbody>
+            <tr>
+              <td>Full Name <span style="color:var(--red)">*</span></td>
+              <td><input class="form-input" type="text" id="c-name" name="name" placeholder="Ravi Kumar" required="" autocomplete="name"></td>
+            </tr>
+            <tr>
+              <td>Email <span style="color:var(--red)">*</span></td>
+              <td><input class="form-input" type="email" id="c-email" name="email" placeholder="ravi@sunpower.in" required="" autocomplete="email"></td>
+            </tr>
+            <tr>
+              <td>Company <span style="color:var(--red)">*</span></td>
+              <td><input class="form-input" type="text" id="c-company" name="company" placeholder="SunPower Solutions" required=""></td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td><input class="form-input" type="tel" id="c-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel"></td>
+            </tr>
+            <tr>
+              <td>No. of Plants</td>
+              <td><input class="form-input" type="number" id="c-plants" name="num_plants" placeholder="e.g. 5" min="1"></td>
+            </tr>
+            <tr>
+              <td>Plant Capacity</td>
+              <td><input class="form-input" type="text" id="c-capacity" name="capacity" placeholder="e.g. 250 kW or 2.5 MW"></td>
+            </tr>
+          </tbody>
+        </table>
         <button type="submit" class="form-submit" id="contact-submit-btn" style="margin-top:16px;">
           Submit Request →
         </button>
@@ -1086,17 +1080,17 @@
     </div>
   </div>
 
-  <!-- SCROLL REVEAL + MODAL LOGIC + FORM HANDLER -->
+  <!-- SCRIPTS -->
   <script>
-    // ── Scroll reveal ──────────────────────────────────────────────
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+    // Scroll reveal
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
         if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
 
-    // ── Modal helpers ──────────────────────────────────────────────
+    // Modal helpers
     function openModal(id) {
       document.getElementById(id).classList.add('open');
       document.body.style.overflow = 'hidden';
@@ -1111,29 +1105,27 @@
     function openPricingModal() { openModal('pricing-modal'); }
     function openContactModal() { openModal('contact-modal'); }
 
-    // Close on Escape
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         closeModal('pricing-modal');
         closeModal('contact-modal');
       }
     });
 
-    // ── Contact form submit ────────────────────────────────────────
-    const contactForm = document.getElementById('contact-form-el');
-    const contactSubmitBtn = document.getElementById('contact-submit-btn');
-    const contactMsg = document.getElementById('contact-form-msg');
+    // Contact form submit
+    var contactForm = document.getElementById('contact-form-el');
+    var contactSubmitBtn = document.getElementById('contact-submit-btn');
+    var contactMsg = document.getElementById('contact-form-msg');
 
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       contactMsg.className = 'form-msg';
       contactMsg.textContent = '';
 
-      // Attach stored UTM params to submission
-      let storedUtm = {};
-      try { storedUtm = JSON.parse(localStorage.getItem('bijlee_utm') || '{}'); } catch {}
+      var storedUtm = {};
+      try { storedUtm = JSON.parse(localStorage.getItem('bijlee_utm') || '{}'); } catch(err) {}
 
-      const data = {
+      var data = {
         name: document.getElementById('c-name').value.trim(),
         email: document.getElementById('c-email').value.trim(),
         company: document.getElementById('c-company').value.trim(),
@@ -1142,7 +1134,7 @@
         capacity: document.getElementById('c-capacity').value.trim(),
         utm_source: storedUtm.utm_source || null,
         utm_medium: storedUtm.utm_medium || null,
-        utm_campaign: storedUtm.utm_campaign || null,
+        utm_campaign: storedUtm.utm_campaign || null
       };
 
       if (!data.name || !data.company || !data.email) {
@@ -1151,7 +1143,7 @@
         return;
       }
 
-      const emailRe = /^[^\n@]+@[^\n@]+\.[^\n@]+$/;
+      var emailRe = /^[^\n@]+@[^\n@]+\.[^\n@]+$/;
       if (!emailRe.test(data.email)) {
         contactMsg.className = 'form-msg error';
         contactMsg.textContent = 'Please enter a valid email address.';
@@ -1161,38 +1153,38 @@
       contactSubmitBtn.disabled = true;
       contactSubmitBtn.textContent = 'Submitting…';
 
-      try {
-        const res = await fetch('/api/demo-requests', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data),
-        });
-
+      fetch('https://gridmind-17.polsia.app/api/demo-requests', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function(res) {
         if (res.ok) {
           contactMsg.className = 'form-msg success';
-          contactMsg.textContent = 'Request submitted! We\'ll get back to you within one business day.';
+          contactMsg.textContent = "Request submitted! We'll get back to you within one business day.";
           contactForm.reset();
-          // Auto-close after 2.5s
-          setTimeout(() => closeModal('contact-modal'), 2500);
+          setTimeout(function() { closeModal('contact-modal'); }, 2500);
         } else {
-          const json = await res.json().catch(() => ({}));
-          contactMsg.className = 'form-msg error';
-          contactMsg.textContent = json.error || 'Something went wrong. Please try again.';
+          return res.json().catch(function() { return {}; }).then(function(json) {
+            contactMsg.className = 'form-msg error';
+            contactMsg.textContent = json.error || 'Something went wrong. Please try again.';
+          });
         }
-      } catch {
+      })
+      .catch(function() {
         contactMsg.className = 'form-msg error';
         contactMsg.textContent = 'Network error. Please check your connection and try again.';
-      } finally {
+      })
+      .finally(function() {
         contactSubmitBtn.disabled = false;
         contactSubmitBtn.textContent = 'Submit Request →';
-      }
+      });
     });
   </script>
 
-  <!-- UTM capture + server-side page view tracking -->
+  <!-- UTM capture + tracking -->
   <script>
   (function() {
-    // Parse UTM params from URL; persist to localStorage for form submissions
     var params = new URLSearchParams(window.location.search);
     var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
     var utm = {};
@@ -1200,22 +1192,21 @@
     if (Object.keys(utm).length) {
       localStorage.setItem('bijlee_utm', JSON.stringify(utm));
     } else {
-      try { utm = JSON.parse(localStorage.getItem('bijlee_utm') || '{}'); } catch {}
+      try { utm = JSON.parse(localStorage.getItem('bijlee_utm') || '{}'); } catch(err) {}
     }
-    // Fire server-side page view beacon (non-blocking)
     if (navigator.sendBeacon) {
       var blob = new Blob([JSON.stringify({
         page: window.location.pathname,
         referrer: document.referrer,
         utm: utm
       })], { type: 'application/json' });
-      navigator.sendBeacon('/api/track', blob);
+      navigator.sendBeacon('https://gridmind-17.polsia.app/api/track', blob);
     } else {
-      fetch('/api/track', {
+      fetch('https://gridmind-17.polsia.app/api/track', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ page: window.location.pathname, referrer: document.referrer, utm: utm }),
-        keepalive: true,
+        keepalive: true
       }).catch(function(){});
     }
   })();
@@ -1237,6 +1228,5 @@
     new Image().src = 'https://polsia.com/api/beacon/pixel?s=' + encodeURIComponent(slug) + '&v=' + encodeURIComponent(vid);
   })();
   </script>
-
 
 </body></html>
